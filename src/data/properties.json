@@ -1,0 +1,37 @@
+[
+    {
+    "id":1,
+    "Name":"house",
+    "Type": "rent",
+    "price":12000
+    
+  },
+  {
+    "id":2,
+    "Name":"house",
+    "Type": "rent",
+    "price":12000
+    
+  },
+  {
+    "id":4,
+    "Name":"house",
+    "Type": "rent",
+    "price":12000
+    
+  },
+  {
+    "id":5,
+    "Name":"house",
+    "Type": "rent",
+    "price":12000
+    
+  },
+  {
+    "id":5,
+    "Name":"house",
+    "Type": "rent",
+    "price":12000
+    
+  }
+  ]
