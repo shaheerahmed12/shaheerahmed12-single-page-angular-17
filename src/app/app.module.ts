@@ -11,11 +11,20 @@ import { HousingService } from './services/housing.service';
 import { Route,RouterModule, Routes } from '@angular/router';
 import { AddPropertyComponent } from './add-property/add-property/add-property.component';
 import { PropertyDetailComponent } from './property-detail/property-detail/property-detail.component';
+import { PropertyRentComponent } from './property-rent/property-rent/property-rent.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { RegistrationComponent } from './user/Register/Registration/Registration.component';
+import { LoginComponent } from './user/Register/login/Login/Login.component';
+import { UserServiceService } from './services/userService.service';
+
 
 const appRoutes:Routes=[
   {path:'',component: PropertyListComponent},
   {path:'add-property',component:    AddPropertyComponent},
-  {path:'property-detail/:id',component:   PropertyDetailComponent }
+  {path:'rent-property',component:   PropertyRentComponent },
+  {path:'property-detail/:id',component:  PropertyDetailComponent  },
+  {path:'user-login',component:   LoginComponent },
+  {path:'user-registration',component:  RegistrationComponent }
 ]
 @NgModule({
   declarations: [
@@ -24,17 +33,23 @@ const appRoutes:Routes=[
     CardComponent,
     PropertyListComponent,
     AddPropertyComponent,
-   PropertyDetailComponent
+   PropertyDetailComponent,
+   PropertyRentComponent,
+   RegistrationComponent,
+   LoginComponent
+   
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
-    
+    FormsModule,
+    ReactiveFormsModule,
     RouterModule.forRoot(appRoutes)
     
   ],
   providers: [
-    HousingService
+    HousingService,
+    UserServiceService
   ],
   bootstrap: [AppComponent]
 })

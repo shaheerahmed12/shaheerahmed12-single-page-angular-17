@@ -1,37 +1,43 @@
 [
     {
     "id":1,
+    "Sell":2,
     "Name":"house",
     "Type": "rent",
-    "price":12000
+    "price":12000,
+    "img":"prop-1"
     
   },
   {
     "id":2,
+    "Sell":2,
     "Name":"house",
     "Type": "rent",
-    "price":12000
-    
+    "price":12000,
+    "img":"prop-2"
   },
   {
+    "Sell":1,
+    "id":3,
+    "Name":"house",
+    "Type": "rent",
+    "price":12000,
+    "img":"prop-4"
+  },
+  {
+    "Sell":1,
     "id":4,
     "Name":"house",
     "Type": "rent",
-    "price":12000
-    
+    "price":12000,
+    "img":"prop-3"
   },
   {
     "id":5,
+    "Sell":1,
     "Name":"house",
     "Type": "rent",
-    "price":12000
-    
-  },
-  {
-    "id":5,
-    "Name":"house",
-    "Type": "rent",
-    "price":12000
-    
+    "price":12000,
+    "img":"download"
   }
   ]

@@ -1,0 +1,49 @@
+<div class="card">
+  <div class="card-header">
+      Rigesteration
+  </div>
+<div class="card-body">
+  <form [formGroup]="registrationForm" (ngSubmit)='onSubmit()'  >
+      <div class="form-group-col-12">
+          <label for="name">Name</label>
+          <input type="text" class="form-control"  formControlName="userName" >
+           <span *ngIf="!userName.valid && (userName?.touched || userSubmitted)">
+            please provide Name
+           </span>
+      </div>
+      <br>
+      <div class="form-group-col-12">
+          <label for="Email">Email</label>
+          <input type="email" class="form-control" formControlName="email" >
+      
+          <span *ngIf="!email.valid && (email?.touched || userSubmitted)">
+            <span *ngIf="email.hasError('required')">
+              please enter your email</span>
+              <span *ngIf="email.hasError('email')">
+                please enter your valid email </span>
+          </span>
+             
+           
+          
+      </div>
+      <br>
+      <div class="form-group-col-12">
+          <label for="Password">Password</label>
+          <input type="password" class="form-control" formControlName="password"required>
+      </div>
+      <div class="form-group-col-12">
+        <label for="confirm">Confirm Password</label>
+        <input type="password" class="form-control" formControlName="confirm" required>
+    </div>
+      <div class="form-group-col-12">
+         <button  type="submit" class="btn btn-primary m-2">Submit</button>
+         <button type="reset" class="btn btn-primary ">Cancel</button>
+          
+      </div>
+      Form Values:{{registrationForm.value }}<br/>
+  Form Status:{{registrationForm.status }}
+
+  </form>
+ 
+</div>
+</div>

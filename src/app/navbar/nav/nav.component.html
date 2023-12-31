@@ -11,21 +11,26 @@
           <a class="nav-link mx-2 active" aria-current="page" [routerLinkActiveOptions]="{exact:true}" routerLinkActive="active" routerLink="/">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link mx-2" [routerLinkActiveOptions]="{exact:true}" routerLinkActive="active" routerLink="/add-property">Products</a>
+          <a class="nav-link mx-2" [routerLinkActiveOptions]="{exact:true}" routerLinkActive="active" routerLink="/rent-property">Rent</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link mx-2" href="#">Pricing</a>
+          <a class="nav-link mx-2" [routerLinkActiveOptions]="{exact:true}" routerLinkActive="active" routerLink="/add-property">Add House</a>
         </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link mx-2 dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Company
-          </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            <li><a class="dropdown-item" href="#">Blog</a></li>
-            <li><a class="dropdown-item" href="#">About Us</a></li>
-            <li><a class="dropdown-item" href="#">Contact us</a></li>
-          </ul>
+        
+        
+      </ul>
+    </div>
+    <div class=" collapse navbar-collapse m-l-3" id="navbarNavDropdown" >
+      <ul class="navbar-nav ms-auto ">
+        <li class="nav-item">
+          <a class="nav-link mx-2 active" aria-current="page" [routerLinkActiveOptions]="{exact:true}" routerLinkActive="active" routerLink="/user-login">Login</a>
         </li>
+        <li class="nav-item">
+          <a class="nav-link mx-2" [routerLinkActiveOptions]="{exact:true}" routerLinkActive="active" routerLink="/user-registration">Registration</a>
+        </li>
+      
+        
+        
       </ul>
     </div>
   </div>
